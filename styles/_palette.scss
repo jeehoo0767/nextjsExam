@@ -1,0 +1,141 @@
+/*===========================================================================
+	COLOR
+============================================================================*/
+$color-white: #ffffff !default;
+$color-title: #282c30 !default;
+$color-content: #495057 !default;
+$color-sponsored: #adb5bd !default;
+$color-active: #00c854 !default;
+$color-category: #7e848a !default;
+$color-filter: #212529 !default;
+$color-graywhite: #f8f8f8 !default;
+$border: 1px solid #e1e4e7 !default;
+$box-shadow: 0px 1px 5px #00000012 !default;
+$button-color: #1f4e82 !default;
+$color-red: #ff6060;
+$components-title-color: #091223;
+$components-contents-color: #18253e;
+$components-text-color: #c7cdd8;
+$components-border-color: #4aebdb;
+$active-color: #4aebdb;
+$pannel-contents-color: #0f1623;
+$pannel-head-color: #0f1623;
+$item-box-color: #2e4265;
+$color-brwon: #c29b6c;
+$color-yellow: #f7f702;
+$chat-background-color: #3effe8;
+
+/*===========================================================================
+	Breakpoints
+============================================================================*/
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 758px;
+$breakpoint-desktop: 1024px;
+
+/*===========================================================================
+	FontSize
+============================================================================*/
+$font-large: 18px;
+$font-medium: 14px;
+$font-small: 12px;
+$font-micro: 10px;
+
+/*===========================================================================
+	MIXIN
+============================================================================*/
+
+@mixin margin-x($_) {
+  margin-right: $_;
+  margin-left: $_;
+}
+@mixin padding-x($_) {
+  padding-right: $_;
+  padding-left: $_;
+}
+@mixin margin-y($_) {
+  margin-top: $_;
+  margin-bottom: $_;
+}
+@mixin padding-y($_) {
+  padding-top: $_;
+  padding-bottom: $_;
+}
+@mixin mobile {
+  @media (min-width: #{$breakpoint-mobile}) and (max-width: #{$breakpoint-tablet - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}
+
+@mixin flex-horizontal-center {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin abs-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin square($_) {
+  width: $_;
+  height: $_;
+}
+@mixin square_r($_, $__) {
+  width: $_ !important;
+  height: $_ !important;
+  border-radius: $__ !important;
+}
+@mixin height($h) {
+  height: $h;
+  min-height: $h;
+  max-height: $h;
+}
+@mixin circle($_) {
+  width: $_;
+  height: $_;
+  border-radius: 50%;
+}
+@mixin fixedSquare($_) {
+  height: $_;
+  min-height: $_;
+  max-height: $_;
+  width: $_;
+  min-width: $_;
+  max-width: $_;
+}
+@mixin no-drag {
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

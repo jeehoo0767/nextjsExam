@@ -1,0 +1,183 @@
+@import './palette.scss';
+
+/*===========================================================================
+FONT
+============================================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;900&display=swap');
+/*===========================================================================
+	INIT
+============================================================================*/
+a,
+input,
+button,
+textarea {
+  all: unset;
+  outline: none;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button,
+input,
+br,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  color: #444;
+  line-height: 1.2;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  line-height: initial;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+ol,
+ul,
+li {
+  list-style: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  // font-family: 'Noto Sans KR';
+  font-family: 'Aldrich';
+  word-break: keep-all;
+}
+
+.react-grid-item > .react-resizable-handle::after {
+  // content: '' !important;
+  // position: absolute !important;
+  // z-index: 10;
+  // right: -2px !important;
+  // bottom: -2px !important;
+  // width: 50px !important;
+  // height: 50px !important;
+  // border-right: 2px solid argb(255, 255, 255, 1) !important;
+  // border-bottom: 2px solid argb(255, 255, 255, 1) !important;
+  content: '' !important;
+  position: absolute !important;
+  z-index: 100;
+  right: -1px !important;
+  bottom: -1px !important;
+  width: 20px !important;
+  height: 20px !important;
+  border-right: 3px solid var(--theme-component-border-color) !important;
+  border-bottom: 3px solid var(--theme-component-border-color) !important;
+  border-radius: 5px 0 5px 0 !important;
+}
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--theme-component-header-background-color);
+  border-radius: 100px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
