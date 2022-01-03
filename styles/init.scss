@@ -141,31 +141,8 @@ table {
   border-spacing: 0;
 }
 * {
-  // font-family: 'Noto Sans KR';
-  font-family: 'Aldrich';
+  font-family: 'Noto Sans KR';
   word-break: keep-all;
-}
-
-.react-grid-item > .react-resizable-handle::after {
-  // content: '' !important;
-  // position: absolute !important;
-  // z-index: 10;
-  // right: -2px !important;
-  // bottom: -2px !important;
-  // width: 50px !important;
-  // height: 50px !important;
-  // border-right: 2px solid argb(255, 255, 255, 1) !important;
-  // border-bottom: 2px solid argb(255, 255, 255, 1) !important;
-  content: '' !important;
-  position: absolute !important;
-  z-index: 100;
-  right: -1px !important;
-  bottom: -1px !important;
-  width: 20px !important;
-  height: 20px !important;
-  border-right: 3px solid var(--theme-component-border-color) !important;
-  border-bottom: 3px solid var(--theme-component-border-color) !important;
-  border-radius: 5px 0 5px 0 !important;
 }
 
 *::-webkit-scrollbar {

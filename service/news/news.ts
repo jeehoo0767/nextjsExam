@@ -11,9 +11,9 @@ export const news = {
         'X-Naver-Client-Id': 'iPm3lPnekLU9Fmkhj6m2',
         'X-Naver-Client-Secret': 'cHh27Neul5',
       },
-      // params: {
-      //   page: 1,
-      // },
+      params: {
+        query: '삼성전자',
+      },
     };
     return Axios(config);
   },
