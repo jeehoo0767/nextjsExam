@@ -13,6 +13,7 @@ export const news = {
       },
       params: {
         query: '삼성전자',
+        display: 100,
       },
     };
     return Axios(config);
