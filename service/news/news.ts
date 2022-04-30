@@ -5,14 +5,15 @@ export const news = {
   getNaverNews: async () => {
     const config: AxiosRequestConfig = {
       method: GET,
-      url: 'https://openapi.naver.com/v1/search/news.json',
+      // url: 'https://openapi.naver.com/v1/search/news.json',
+      url: 'https://openapi.naver.com/v1/search/local.json',
       headers: {
         ...JSON_HEADER,
-        'X-Naver-Client-Id': 'iPm3lPnekLU9Fmkhj6m2',
-        'X-Naver-Client-Secret': 'cHh27Neul5',
+        'X-Naver-Client-Id': process.env.NEXT_APP_PUBLIC_NAVER_API_KEY,
+        'X-Naver-Client-Secret': process.env.NEXT_APP_PUBLIC_NAVER_API_SECRET_KEY,
       },
       params: {
-        query: '삼성전자',
+        query: '소사 외과',
         display: 100,
       },
     };

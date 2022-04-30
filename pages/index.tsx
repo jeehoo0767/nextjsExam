@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import API from 'service/api';
 import Image from 'next/image';
+import Map from 'components/Map';
 
 export default function Home({ data }) {
   const [movies, setMovies] = useState([]);
@@ -29,6 +30,7 @@ export default function Home({ data }) {
               </article>
             </>
           ))}
+          <Map data={data} />
         </section>
       </main>
       <style jsx>
@@ -63,10 +65,11 @@ export default function Home({ data }) {
   previewData: setPreviewData로 설정된 데이터
  */
 export async function getServerSideProps() {
-  const res = await API.movie.getMovies();
+  const res: any = await API.news.getNaverNews();
+  console.log(res.data.items);
   return {
     props: {
-      data: res.data,
+      data: res.data.items,
       // name: process.env.name,
     },
   };
